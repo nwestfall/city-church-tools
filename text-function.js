@@ -12,7 +12,7 @@ exports.handler = async (event) => {
     
     var queryData = url.parse('/sms?' + text, true).query
 
-    var message = "Sorry, we didn't catch that keyword!  Try 'groups', 'baptisms', or 'serve' to get started!"
+    var message = "Sorry, we didn't catch that keyword!  Try 'groups', 'baptisms', 'jesus', or 'serve' to get started!"
 
     switch(queryData.Body.toLowerCase())
     {
