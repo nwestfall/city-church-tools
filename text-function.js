@@ -17,7 +17,7 @@ exports.handler = async (event) => {
     switch(queryData.Body.toLowerCase())
     {
         case "jesus":
-            message = "We are so excited to hear about your decision to follow Jesus!  We'd like to welcome you to the family with some helpful information - https://bit.ly/2WBJ089"
+            message = "We are so excited to hear about your decision to follow Jesus!  We would like to welcome you to the family with some helpful information - https://bit.ly/2WBJ089"
             break
         case "groups":
         case "group":
@@ -25,7 +25,7 @@ exports.handler = async (event) => {
             break
         case "baptism":
         case "baptisms":
-            message = "We're so excited to hear about you wanting to taking your next step in faith through baptism!  Here is some more information about what this means - http://bit.ly/2UgxyvQ\n\nIf you'd like to sign up to be baptized, tap here to get started - http://bit.ly/2UgxyvQ"
+            message = "We're so excited to hear about you wanting to taking your next step in faith through baptism!  Here is some more information about what this means - https://bit.ly/2UCz1wS\n\nIf you'd like to sign up to be baptized, tap here to get started - https://bit.ly/2UCz1wS"
             break
         case "serve":
             message = "Serving is great way to get plugged in to the community!  There are many different ways to serve, all listed here - http://bit.ly/2w34Fvm\n\nCheck them out and sign up!"
