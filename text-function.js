@@ -12,16 +12,12 @@ exports.handler = async (event) => {
     
     var queryData = url.parse('/sms?' + text, true).query
 
-    var message = "Sorry, we didn't catch that keyword!  Try 'groups', 'baptisms', 'jesus', or 'serve' to get started!"
+    var message = "Sorry, we didn't catch that keyword!  Try 'groups', 'baptisms', or 'serve' to get started!"
 
     switch(queryData.Body.toLowerCase())
     {
-        case "new":
-        case "welcome":
-            message = "Thank you for deciding to join us today!  We are super excited to that you choose to be with us.  Here's some quick information about us - https://bit.ly/2xvn4RG"
-            break;
         case "jesus":
-            message = "We are so excited to hear about your decision to follow Jesus!  We would like to welcome you to the family with some helpful information - https://bit.ly/2WBJ089"
+            message = "We are so excited to hear about your decision to follow Jesus!  We'd like to welcome you to the family with some helpful information - https://bit.ly/2WBJ089"
             break
         case "groups":
         case "group":
@@ -29,7 +25,7 @@ exports.handler = async (event) => {
             break
         case "baptism":
         case "baptisms":
-            message = "We're so excited to hear about you wanting to taking your next step in faith through baptism!  Here is some more information about what this means - https://bit.ly/2UCz1wS\n\nIf you'd like to sign up to be baptized, tap here to get started - https://bit.ly/2UCz1wS"
+            message = "We're so excited to hear about you wanting to taking your next step in faith through baptism!  Here is some more information about what this means - http://bit.ly/2UgxyvQ\n\nIf you'd like to sign up to be baptized, tap here to get started - http://bit.ly/2UgxyvQ"
             break
         case "serve":
             message = "Serving is great way to get plugged in to the community!  There are many different ways to serve, all listed here - http://bit.ly/2w34Fvm\n\nCheck them out and sign up!"
@@ -37,6 +33,11 @@ exports.handler = async (event) => {
         case "give":
         case "giving":
             message = "Thanks so much for deciding to give! Here's a link to give online - https://bit.ly/33vnO55"
+            break
+        case "prayer":
+        case "pray":
+        case "praying":    
+            message = "We'd love to be praying for you. Let us know how we can be here: https://bit.ly/39VuxH3"
             break
         case "watch":
         case "live":
@@ -47,7 +48,7 @@ exports.handler = async (event) => {
         case "covid-19":
         case "covid19":
         case "coronavirus":
-            message = "Our number 1 priority is making sure everyone stays safe and healthly.  To find out the changes City Church is making, visit https://bit.ly/2WATzIO"
+            message = "Our number 1 priority is making sure everyone stays safe and healthly.  To find out the changes City Church is making visit https://bit.ly/2WATzIO"
             break
     }            
 
