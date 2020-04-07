@@ -37,7 +37,7 @@ exports.handler = async (event) => {
         case "prayer":
         case "pray":
         case "praying":    
-            message = "We'd love to be praying for you. Let us know how we can be here: https://bit.ly/39VuxH3"
+            message = "We would love to be praying for you. Let us know how we can be here: https://bit.ly/39VuxH3"
             break
         case "watch":
         case "live":
