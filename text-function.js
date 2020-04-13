@@ -16,6 +16,10 @@ exports.handler = async (event) => {
 
     switch(queryData.Body.toLowerCase())
     {
+        case "new":
+        case "welcome":
+            message = "Thank you for deciding to join us today!  We are super excited to that you choose to be with us.  Here's some quick information about us - https://bit.ly/2xvn4RG"
+            break;
         case "jesus":
             message = "We are so excited to hear about your decision to follow Jesus!  We'd like to welcome you to the family with some helpful information - https://bit.ly/2WBJ089"
             break
