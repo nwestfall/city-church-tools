@@ -41,7 +41,7 @@ exports.handler = async (event) => {
         case "prayer":
         case "pray":
         case "praying":    
-            message = "We would love to be praying for you. Let us know how we can be here: https://bit.ly/39VuxH3"
+            message = "We'd love to be praying for you. Let us know how we can be here: https://bit.ly/39VuxH3"
             break
         case "watch":
         case "live":
@@ -56,6 +56,11 @@ exports.handler = async (event) => {
         case "covid19":
         case "coronavirus":
             message = "Our number 1 priority is making sure everyone stays safe and healthly.  To find out the changes City Church is making visit https://bit.ly/2WATzIO"
+            break
+        case "housechurch":
+        case "house church":
+        case "house":
+            message = "We would love to connect with you in person and build community as we slowly progress towards a Sunday experience. To find out more info on a House Church near you visit https://bit.ly/2TY4sCk"
             break
     }            
 
