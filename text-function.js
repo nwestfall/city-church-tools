@@ -48,6 +48,9 @@ exports.handler = async (event) => {
         case "watch live":
             message = "Watch us live 11AM every Sunday!  Tap the link to join the experience - http://bit.ly/2x1aUzT"
             break
+        case "housechurch":
+            message = "Sign up for a house church, starting June 14th - https://bit.ly/2MyVtDe"
+            break
         case "covid":
         case "covid-19":
         case "covid19":
